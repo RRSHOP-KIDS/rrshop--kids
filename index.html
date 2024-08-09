@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RRSHOP Kids - الصفحة الرئيسية</title>
     <style>
+        /* Style global */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9f9f9;
+            color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
 
         .container {
             max-width: 1200px;
             margin: auto;
-            padding: 0 20px;
+            padding: 20px;
         }
 
         header {
-            background: #ff6347;
+            background: linear-gradient(to right, #ff6347, #ff4500);
             color: #fff;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
+            border-bottom: 5px solid #e03d00;
         }
 
         header h1 {
@@ -41,6 +43,7 @@
         .content {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             margin: 40px 0;
         }
 
@@ -67,15 +70,23 @@
 
         form {
             background: #fff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+        }
+
+        form h2 {
+            margin-top: 0;
+            color: #ff4500;
+            font-size: 1.8rem;
         }
 
         form label {
             display: block;
             margin: 10px 0;
+            font-weight: bold;
+            color: #555;
         }
 
         form input, form button {
@@ -83,6 +94,20 @@
             padding: 10px;
             margin-top: 5px;
             font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #e03d00;
         }
 
         footer {
@@ -91,6 +116,12 @@
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+            border-top: 5px solid #ff4500;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -140,3 +171,4 @@
 
 </body>
 </html>
+
