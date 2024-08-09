@@ -5,61 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RRSHOP Kids - الصفحة الرئيسية</title>
     <style>
-        /* Style global */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
         .container {
             max-width: 1200px;
-            margin: auto;
+            margin: 0 auto;
             padding: 20px;
         }
 
         header {
-            background: linear-gradient(to right, #ff6347, #ff4500);
-            color: #fff;
-            padding: 40px 0;
+            background: white;
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 5px solid #e03d00;
+            border-bottom: 2px solid #eee;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        header img {
+            max-width: 150px;
         }
 
-        .product-image {
-            width: 100%;
+        .hero {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .hero img {
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
-            margin-top: 20px;
         }
 
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 40px 0;
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
 
-        .content div {
-            flex: 1;
-            margin: 10px;
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
         }
 
         .cta-button {
-            background-color: #ff4500;
+            background-color: #ff6347;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
             font-size: 18px;
             transition: background-color 0.3s ease;
         }
@@ -68,38 +71,44 @@
             background-color: #e03d00;
         }
 
-        form {
+        .form-section {
             background: #fff;
-            padding: 30px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            margin: 20px 0;
+            text-align: center;
         }
 
-        form h2 {
-            margin-top: 0;
-            color: #ff4500;
+        .form-section h2 {
+            margin-bottom: 20px;
             font-size: 1.8rem;
+            color: #ff6347;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         form label {
             display: block;
-            margin: 10px 0;
+            text-align: left;
+            margin-bottom: 10px;
             font-weight: bold;
-            color: #555;
         }
 
         form input, form button {
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
             font-size: 16px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
 
         form button {
-            background-color: #ff4500;
+            background-color: #ff6347;
             color: #fff;
             border: none;
             cursor: pointer;
@@ -111,17 +120,22 @@
         }
 
         footer {
-            background: #333;
-            color: #fff;
             text-align: center;
             padding: 20px;
+            background: #333;
+            color: #fff;
             margin-top: 40px;
-            border-top: 5px solid #ff4500;
+            font-size: 0.9rem;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -129,46 +143,38 @@
 
     <header>
         <div class="container">
-            <h1>الحقيبة المدرسية المثالية لطفلك</h1>
+            <img src="logo.png" alt="RRSHOP Kids Logo">
         </div>
     </header>
 
     <div class="container">
-        <div class="content">
-            <div>
-                <img src="product-image.jpg" alt="حقيبة مدرسية مع عجلات" class="product-image">
-            </div>
-            <div>
-                <p>اكتشف مجموعتنا من الحقائب المدرسية المزودة بعجلات مع مقلمة وحقيبة غداء. مثالية للأطفال الذين تتراوح أعمارهم بين 6 و 10 سنوات، تساعد هذه الحقائب طفلك على التنقل بسهولة مع الحفاظ على تنظيم مستلزماته.</p>
-                <p><strong>التوصيل مجاني في جميع أنحاء المغرب!</strong></p>
-                <a href="#order-form" class="cta-button">اطلبوا الآن</a>
-            </div>
-        </div>
+        <section class="hero">
+            <img src="product-image.jpg" alt="حقيبة مدرسية مع عجلات">
+            <h1>الحقيبة المدرسية المثالية لطفلك</h1>
+            <p>اكتشف مجموعتنا من الحقائب المدرسية المزودة بعجلات مع مقلمة وحقيبة غداء. مثالية للأطفال الذين تتراوح أعمارهم بين 6 و 10 سنوات، تساعد هذه الحقائب طفلك على التنقل بسهولة مع الحفاظ على تنظيم مستلزماته.</p>
+            <a href="#order-form" class="cta-button">اطلبوا الآن</a>
+        </section>
 
-        <form id="order-form" action="https://formspree.io/f/xanwjjbk" method="POST">
+        <section class="form-section" id="order-form">
             <h2>إرسال طلبك</h2>
-            <label>
-              الاسم بالعربية:
-              <input type="text" name="name" required>
-            </label>
-            <label>
-              رقم الهاتف بالعربية:
-              <input type="text" name="phone" required>
-            </label>
-            <label>
-              عنوان التوصيل بالعربية:
-              <input type="text" name="address" required>
-            </label>
-            <button type="submit">إرسال الطلب</button>
-        </form>
+            <form action="https://formspree.io/f/xanwjjbk" method="POST">
+                <label for="name">الاسم بالعربية:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">رقم الهاتف بالعربية:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="address">عنوان التوصيل بالعربية:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </section>
     </div>
 
     <footer>
-        <div class="container">
-            <p>جميع الحقوق محفوظة &copy; 2024 RRSHOP Kids</p>
-        </div>
+        <p>جميع الحقوق محفوظة &copy; 2024 RRSHOP Kids</p>
     </footer>
 
 </body>
 </html>
-
