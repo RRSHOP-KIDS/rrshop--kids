@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRSHOP Kids - الصفحة الرئيسية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .cta-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .cta-button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>الحقيبة المدرسية المثالية لطفلك</h1>
+        <img src="product-image.jpg" alt="حقيبة مدرسية مع عجلات" class="product-image">
+        <p>اكتشف مجموعتنا من الحقائب المدرسية المزودة بعجلات مع مقلمة وحقيبة غداء.</p>
+        <p><strong>التوصيل مجاني في جميع أنحاء المغرب!</strong></p>
+        <a href="#" class="cta-button">اطلبوا الآن</a>
+        <form action="submit-form.html" method="POST">
+            <input type="text" name="name" placeholder="الاسم بالعربية">
+            <input type="text" name="phone" placeholder="رقم الهاتف بالعربية">
+            <input type="text" name="address" placeholder="عنوان التوصيل بالعربية">
+            <input type="submit" value="إرسال الطلب">
+        </form>
+    </div>
+</body>
+</html>
