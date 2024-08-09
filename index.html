@@ -6,69 +6,137 @@
     <title>RRSHOP Kids - الصفحة الرئيسية</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
+
         .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
+            max-width: 1200px;
             margin: auto;
+            padding: 0 20px;
         }
-        h1 {
-            color: #333;
+
+        header {
+            background: #ff6347;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
         .product-image {
             width: 100%;
             height: auto;
             border-radius: 10px;
+            margin-top: 20px;
         }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .content div {
+            flex: 1;
+            margin: 10px;
+        }
+
         .cta-button {
-            background-color: #ff6347;
+            background-color: #ff4500;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            margin: 20px 0;
+            margin-top: 20px;
             font-size: 18px;
+            transition: background-color 0.3s ease;
         }
+
         .cta-button:hover {
-            background-color: #ff4500;
+            background-color: #e03d00;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
+
+    <header>
+        <div class="container">
+            <h1>الحقيبة المدرسية المثالية لطفلك</h1>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>الحقيبة المدرسية المثالية لطفلك</h1>
-        <img src="product-image.jpg" alt="حقيبة مدرسية مع عجلات" class="product-image">
-        <p>اكتشف مجموعتنا من الحقائب المدرسية المزودة بعجلات مع مقلمة وحقيبة غداء.</p>
-        <p><strong>التوصيل مجاني في جميع أنحاء المغرب!</strong></p>
-        <a href="#" class="cta-button">اطلبوا الآن</a>
-        
-        <!-- formulaire de commande pour RRSHOP Kids -->
-        <form action="https://formspree.io/f/xanwjjbk" method="POST">
+        <div class="content">
+            <div>
+                <img src="product-image.jpg" alt="حقيبة مدرسية مع عجلات" class="product-image">
+            </div>
+            <div>
+                <p>اكتشف مجموعتنا من الحقائب المدرسية المزودة بعجلات مع مقلمة وحقيبة غداء. مثالية للأطفال الذين تتراوح أعمارهم بين 6 و 10 سنوات، تساعد هذه الحقائب طفلك على التنقل بسهولة مع الحفاظ على تنظيم مستلزماته.</p>
+                <p><strong>التوصيل مجاني في جميع أنحاء المغرب!</strong></p>
+                <a href="#order-form" class="cta-button">اطلبوا الآن</a>
+            </div>
+        </div>
+
+        <form id="order-form" action="https://formspree.io/f/xanwjjbk" method="POST">
+            <h2>إرسال طلبك</h2>
             <label>
               الاسم بالعربية:
               <input type="text" name="name" required>
             </label>
-            <br>
             <label>
               رقم الهاتف بالعربية:
               <input type="text" name="phone" required>
             </label>
-            <br>
             <label>
               عنوان التوصيل بالعربية:
               <input type="text" name="address" required>
             </label>
-            <br>
             <button type="submit">إرسال الطلب</button>
         </form>
     </div>
+
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2024 RRSHOP Kids</p>
+        </div>
+    </footer>
+
 </body>
 </html>
